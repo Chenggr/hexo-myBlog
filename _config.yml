@@ -81,3 +81,8 @@ deploy:
   type: git
   repository: https://github.com/Chenggr/chenggr.github.io
   branch: master
+
+# Security
+##
+encrypt:
+  enable: true
