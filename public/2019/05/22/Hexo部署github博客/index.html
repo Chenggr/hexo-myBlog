@@ -81,7 +81,7 @@
 
 
 
-  <meta name="keywords" content="hexo,">
+  <meta name="keywords" content="hexo,技术,">
 
 
 
@@ -93,14 +93,14 @@
 
 
 <meta name="description" content="我的 Hexo 常用命令">
-<meta name="keywords" content="hexo">
+<meta name="keywords" content="hexo,技术">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo常用命令">
 <meta property="og:url" content="https://chenggr.github.io/2019/05/22/Hexo部署github博客/index.html">
 <meta property="og:site_name" content="Chenggr&#39;s Blog">
 <meta property="og:description" content="我的 Hexo 常用命令">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-22T06:59:02.000Z">
+<meta property="og:updated_time" content="2019-05-22T07:46:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo常用命令">
 <meta name="twitter:description" content="我的 Hexo 常用命令">
@@ -379,9 +379,15 @@
 <p>我的 Hexo 常用命令</p>
 </blockquote>
 <a id="more"></a>
-<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">安装命令: npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 安装命令</span></span><br><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <h3 id="Hexo-关联-github"><a href="#Hexo-关联-github" class="headerlink" title="Hexo 关联 github"></a>Hexo 关联 github</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: http://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https:<span class="comment">//github.com/username/username.github.io</span></span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<h3 id="创建本地博文服务"><a href="#创建本地博文服务" class="headerlink" title="创建本地博文服务"></a>创建本地博文服务</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 启动博文站点</span></span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 就能打开博文了<br>Ctrl+C 关闭服务器</p>
+<h3 id="使用-Hexo-创建和发布文章"><a href="#使用-Hexo-创建和发布文章" class="headerlink" title="使用 Hexo 创建和发布文章"></a>使用 Hexo 创建和发布文章</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 进入 hexo-blog 根目录</span></span><br><span class="line"><span class="comment">// 创建文章命令：</span></span><br><span class="line">hexo <span class="keyword">new</span> <span class="string">"文章标题"</span></span><br></pre></td></tr></table></figure>
 <h3 id="发布上传"><a href="#发布上传" class="headerlink" title="发布上传"></a>发布上传</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="完成后部署"><a href="#完成后部署" class="headerlink" title="完成后部署"></a>完成后部署</h3><p>您可执行下列的其中一个命令，让 Hexo 在生成完毕后自动部署网站，两个命令的作用是相同的。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate --deploy</span><br><span class="line">hexo deploy --generate</span><br></pre></td></tr></table></figure>
+<h5 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h5><p>上面两个命令可以简写为:<br><strong><font color="#0000dd">hexo g -d</font></strong><br><strong><font color="#0000dd">hexo d -g</font></strong></p>
 
       
     </div>
@@ -400,6 +406,8 @@
         <div class="post-tags">
           
             <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/技术/" rel="tag"># 技术</a>
           
         </div>
       
@@ -519,7 +527,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -552,7 +560,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Hexo"><span class="nav-number">1.</span> <span class="nav-text">安装 Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo-关联-github"><span class="nav-number">2.</span> <span class="nav-text">Hexo 关联 github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发布上传"><span class="nav-number">3.</span> <span class="nav-text">发布上传</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Hexo"><span class="nav-number">1.</span> <span class="nav-text">安装 Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo-关联-github"><span class="nav-number">2.</span> <span class="nav-text">Hexo 关联 github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建本地博文服务"><span class="nav-number">3.</span> <span class="nav-text">创建本地博文服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-Hexo-创建和发布文章"><span class="nav-number">4.</span> <span class="nav-text">使用 Hexo 创建和发布文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发布上传"><span class="nav-number">5.</span> <span class="nav-text">发布上传</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#完成后部署"><span class="nav-number">6.</span> <span class="nav-text">完成后部署</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#简写"><span class="nav-number">6.0.1.</span> <span class="nav-text">简写</span></a></li></ol></li></ol></div>
             
 
           </div>

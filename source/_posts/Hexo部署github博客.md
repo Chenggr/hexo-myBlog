@@ -30,14 +30,6 @@ deploy:
   branch: master
 ```
 
-### 发布上传
-
-```javascript
-hexo clean
-hexo generate
-hexo deploy
-```
-
 ### 创建本地博文服务
 
 ```javascript
@@ -47,3 +39,34 @@ hexo server
 
 访问 http://localhost:4000 就能打开博文了
 Ctrl+C 关闭服务器
+
+### 使用 Hexo 创建和发布文章
+
+```javascript
+// 进入 hexo-blog 根目录
+// 创建文章命令：
+hexo new "文章标题"
+```
+
+### 发布上传
+
+```javascript
+hexo clean
+hexo generate
+hexo deploy
+```
+
+### 完成后部署
+
+您可执行下列的其中一个命令，让 Hexo 在生成完毕后自动部署网站，两个命令的作用是相同的。
+
+```javascript
+hexo generate --deploy
+hexo deploy --generate
+```
+
+##### 简写
+
+上面两个命令可以简写为:
+**<font color="#0000dd">hexo g -d</font>**
+**<font color="#0000dd">hexo d -g</font>**
