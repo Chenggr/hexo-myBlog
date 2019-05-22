@@ -2,6 +2,7 @@
 title: interview
 date: 2019-05-22 16:29:49
 tags:
+  - javascript
   - 技术
   - 面试
   - 笔记
