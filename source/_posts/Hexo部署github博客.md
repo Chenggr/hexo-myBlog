@@ -65,8 +65,11 @@ hexo generate --deploy
 hexo deploy --generate
 ```
 
-##### 简写
+#### 简写
 
 上面两个命令可以简写为:
-**<font color="#0000dd">hexo g -d</font>**
-**<font color="#0000dd">hexo d -g</font>**
+
+```javascript
+hexo g -d
+hexo d -g
+```
