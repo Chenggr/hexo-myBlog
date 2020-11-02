@@ -4,6 +4,8 @@ date: 2019-05-22 17:13:08
 tags:
   - 配置
   - 软件下载
+categories: 笔记
+type: 'categories'
 ---
 
 > 记录我的某些常用软件及配置，方便以后查看。
